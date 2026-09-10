@@ -1,7 +1,7 @@
 
 function parseAmount(raw){
     parsed = Number(raw)
-    isInvaild = raw.trim() === "" | Number.isNaN(parsed);
+    isInvaild = raw.trim() === "" || Number.isNaN(parsed);
 
     if(isInvaild){
         return null;
